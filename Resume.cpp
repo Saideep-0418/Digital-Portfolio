@@ -28,7 +28,7 @@ void education() {
 
 void skills() {
     cout << "\n----- TECHNICAL SKILLS -----\n";
-    cout << "Programming Languages : Python, Java, C\n";
+    cout << "Programming Languages : Python, Java, C, C++\n";
     cout << "Web Technologies     : HTML, CSS\n";
     cout << "Database             : MySQL\n";
 
