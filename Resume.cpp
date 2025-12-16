@@ -28,7 +28,7 @@ void education() {
 
 void skills() {
     cout << "\n----- TECHNICAL SKILLS -----\n";
-    cout << "Programming Languages : Python, Java, C, C++\n";
+    cout << "Programming Languages : Python, Java, C\n";
     cout << "Web Technologies     : HTML, CSS\n";
     cout << "Database             : MySQL\n";
 
@@ -45,4 +45,42 @@ void projects() {
     cout << "2. Sentiment Analysis using Natural Language Processing\n";
     cout << "3. Identity Verifier using Machine Learning\n";
     cout << "4. Smart Campus Sentry using Artificial Intelligence\n";
+}
+
+void certifications() {
+    cout << "\n----- CERTIFICATIONS & ACHIEVEMENTS -----\n";
+    cout << "• Winner - Infra Institutional Startup Competition 2025\n";
+    cout << "• Building Language Models on AWS (AWS Training)\n";
+    cout << "• Programming Fundamentals - Duke University\n";
+    cout << "• Introduction to Python Programming - Penn University\n";
+}
+
+int main() {
+    int choice;
+
+    do {
+        cout << "\n================ DIGITAL PORTFOLIO =================\n";
+        cout << "1. Personal Information\n";
+        cout << "2. Career Objective\n";
+        cout << "3. Education\n";
+        cout << "4. Skills\n";
+        cout << "5. Projects\n";
+        cout << "6. Certifications & Achievements\n";
+        cout << "0. Exit\n";
+        cout << "Enter your choice: ";
+        cin >> choice;
+
+        switch (choice) {
+            case 1: personalInfo(); break;
+            case 2: careerObjective(); break;
+            case 3: education(); break;
+            case 4: skills(); break;
+            case 5: projects(); break;
+            case 6: certifications(); break;
+            case 0: cout << "\nThank you for viewing my digital portfolio!\n"; break;
+            default: cout << "\nInvalid choice. Please try again.\n";
+        }
+    } while (choice != 0);
+
+    return 0;
 }
